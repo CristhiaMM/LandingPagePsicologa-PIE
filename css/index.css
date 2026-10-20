@@ -87,3 +87,40 @@
     width: 300px; 
     height: auto;
 }
+
+/* Seção de especialidades */
+.secao-especialidades {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.container-especialidades {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo-especialidades {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.grade-especialidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card-especialidade {
+    padding: 1.5rem;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.card-especialidade h3 {
+    margin-top: 0;
+}
+
+.card-especialidade p {
+    line-height: 1.6;
+}
