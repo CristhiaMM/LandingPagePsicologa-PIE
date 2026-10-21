@@ -124,3 +124,43 @@
 .card-especialidade p {
     line-height: 1.6;
 }
+
+.titulo-funcionamento{
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.texto-funcionamento-consulta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #555555;
+}
+
+.passo-atendimento{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.botao-agendamento{
+    display: flex;
+     text-align: center;
+    gap: 2rem;
+    justify-content: center;
+    background-color: #e9e5e5;
+}
+
+/* .texto-botao{
+    display: flex;
+    text-align: column;
+} */
