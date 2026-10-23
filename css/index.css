@@ -1,3 +1,13 @@
+body { 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+* { 
+    box-sizing: border-box;
+}
+
 /*bloco inicial*/
 .pai-bloco-inicial{
     display: flex;
@@ -5,6 +15,8 @@
     justify-content: space-between;
     gap: 2rem;
     margin-top: 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .texto-esquerda-foto{
@@ -23,15 +35,17 @@
     height: auto;
 }
 
-/*barra de navegação*/
-.navbar-fixa{
+.barra-fixa-top{
     position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #000000; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    width: 100%;
+}
+/*barra de navegação*/
+.navbar-fixa{
+    width: 100%;
+    background-color: #fffdf2;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-container{
@@ -47,7 +61,7 @@
     font-size: 1.25rem;
     font-weight: bold;
     text-decoration: none;
-    color: #f7f6f6;
+    color: #000000;
 }
 
 .navbar-link{
@@ -56,17 +70,34 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
-
-.navbar-link a {
+.navbar-link li a {
     text-decoration: none;
-    color: #555555;
+    color: #000000;
     font-weight: 500;
     transition: color 0.3s ease;
 }
+.navbar-link li a:hover {
+    color: #c98a00;
+}
 
-.navbar-link a:hover {
-    color: #000000;
+.navbar-link li:last-child a {
+    display: incline-block;
+    background-color: #c98a00;
+    color: #fffdf2;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navbar-link li:last-child a:hover {
+    background-color: #fffdf2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    color: #c98a00;
 }
 
 .pai-bloco-sobre{
@@ -76,6 +107,8 @@
     justify-content: space-between;
     gap: 2rem;
     margin-top: 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .texto-sobre{
@@ -130,20 +163,80 @@
     flex-flow: column;
     flex-direction: column;
     text-align: center;
+    background-color: #fffdf2;
 }
 
+.titulo-funcionamento h3{
+    color: #c98a00;
+}
 
 .texto-funcionamento-consulta{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #555555;
+    background-color: #fffdf2;
+    padding-top: 2rem;
+    padding-right: 3%;
 }
 
-.passo-atendimento{
+.passo-atendimento {
     display: flex;
-    gap: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2.5rem;
     list-style: none;
+    margin: 4rem 0;
+    padding: 0 5%;
+    counter-reset: passo;
+    position: relative;
+}
+
+.passo-atendimento::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 7%;
+    right: 7%;
+    height: 1px;
+    background-color: #c98a00;
+    z-index: 1;
+}
+.passo-atendimento li {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    z-index: 2;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: #333333;
+    text-align: left;
+}
+
+.passo-atendimento li::before {
+    counter-increment: passo;
+    content: counter(passo,decimal-leading-zero);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display:grid;
+    place-items: center;
+    background-color: #c98a00;
+    color: #fffdf2;
+    font-weight: bold;
+    font-size: 0.85rem;
+    line-height: 1;
+    padding: 0;
+    margin: 0 0 1.2rem 0;
+    float: none;
+}
+
+.passo-atendimento li::first-line {
+    font-weight: bold;
+    font-size: 1.05rem;
+    color: #000000;
 }
 
 .item{
@@ -154,12 +247,36 @@
 
 .botao-agendamento{
     display: flex;
-     text-align: center;
+    text-align: center;
     gap: 2rem;
     justify-content: center;
-    background-color: #e9e5e5;
+    align-items: center; 
+    background-color: #fef9e2;
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid #c98a00;
+    max-width: 900px;
+    margin: 3rem auto;
 }
 
+.botao-agendamento button {
+   background-color:#c98a00;
+    color: #fffdf2;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.botao-agendamento button:hover {
+    background-color: #fffdf2;
+    color: #c98a00;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 /* .texto-botao{
     display: flex;
     text-align: column;
