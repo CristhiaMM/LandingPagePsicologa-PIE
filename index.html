@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link
+    rel="stylesheet" href="css/style.css"> <!--link do css-->
     <meta name="description" content="Psi. Vanessa A. Gonçalves | Atendimento humanizado!">
     <meta name="keywords" content="Psicologia,psicologa,foz do iguaçu,abordagem tcc,autismo,tdah,avaliação psicologica,rastramento autismo,cid">
     <meta name="author" content="CWMM">
@@ -12,6 +13,7 @@
     <title>Psi. Vanessa Andrade Gonçalves | Psicologa CRP 08/37740</title>  <!--titulo barra de guia-->
     <meta property="og: title" content="Site Psi. Vanessa A. Gonçalves | CRP: 08/37740">
     <meta property="og: description" content="Psicoterapia, Avaliação Neuropsicologia, Autismo">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="navbar-pai" class="barra-fixa-top">
@@ -234,5 +236,14 @@
             </nav>
         </div>
     </footer>
+    <script>
+  const perguntas = document.querySelectorAll('.pergunta-faq');
+
+  perguntas.forEach(pergunta => {
+    pergunta.addEventListener('click', () => {
+      pergunta.parentElement.classList.toggle('aberta');
+    });
+  });
+</script>
 </body>
 </html>
