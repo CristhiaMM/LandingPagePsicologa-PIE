@@ -234,5 +234,13 @@
             </nav>
         </div>
     </footer>
+    <!-- Cole isto na última linha do seu arquivo HTML, antes de </body> -->
+<script>
+    document.querySelectorAll('.item-faq').forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('aberto');
+        });
+    });
+</script>
 </body>
 </html>

@@ -4,6 +4,10 @@ body {
     width: 100%;
 }
 
+hr {
+    display: none;
+}
+
 * { 
     box-sizing: border-box;
 }
@@ -124,7 +128,9 @@ body {
 /* Seção de especialidades */
 .secao-especialidades {
     margin-top: 2rem;
-    padding: 2rem;
+    padding: 4rem 2rem;
+    background-color: #1a1608;
+    color: #fffdf2;
 }
 
 .container-especialidades {
@@ -134,7 +140,25 @@ body {
 
 .titulo-especialidades {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+.titulo-especialidades span {
+    color: #c98a00;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.titulo-especialidades h2 {
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+    color: #fffdf2;
+}
+
+.titulo-especialidades p {
+    color: #b5b0a1;
 }
 
 .grade-especialidades {
@@ -144,18 +168,57 @@ body {
 }
 
 .card-especialidade {
-    padding: 1.5rem;
-    border: 1px solid #dddddd;
-    border-radius: 8px;
-    background-color: #ffffff;
+    padding: 2.5rem 2rem;
+    border: 1px solid #2b281f;
+    border-radius: 16px;
+    background-color: #1e1c15;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.card-especialidade:nth-child(1) h3::before {
+    content: "TERAPIA COGNITIVO-COMPORTAMENTAL";
+    display: block;
+    color: #c98a00;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.card-especialidade:nth-child(2) h3::before {
+    content: "DIAGNOSTICO & RASTEAMENTO";
+    display: block;
+    color: #c98a00;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.card-especialidade:nth-child(3) h3::before {
+    content: "PERFORMANCE & BEM-ESTAR";
+    display: block;
+    color: #c98a00;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
 }
 
 .card-especialidade h3 {
-    margin-top: 0;
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    color: #fffdf2;
 }
 
 .card-especialidade p {
     line-height: 1.6;
+    color: #b5b0a1;
+    font-size: 0.95rem;
+    margin: 0;
 }
 
 .titulo-funcionamento{
@@ -288,26 +351,132 @@ body {
     text-align: center;
     margin-bottom: 3rem;
 }
+
+.titulo-depoimentos span { 
+    color: #c98a00;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.titulo-depoimentos h2 {
+    font-size: 2.2rem;
+    margin-top: 0.5rem;
+    color: #000000;
+}
+
 .grade-depoimentos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-}
-.item-depoimento {
-    text-align: center;
-    border: 1px solid #797979;
-    padding: 5rem;
-    border-radius: 8px;
+    padding: 2rem 5%;
+    background-color: #fef9e2;
 }
 
+.item-depoimento {
+    text-align: left;
+    background-color: #ffffff;
+    border: none;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#depoimentos {
+    background-color: #fef9e2;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+}
+
+item-depoimento p::before {
+    color: #c98a00;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+item-depoimento p {
+    font-style: italic;
+    color: #555555;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin: 0 0 2rem 0;
+}
+
+.item-depoimento h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #000000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.item-depoimento h3::after {
+    display: block;
+    font-weight: normal;
+    font-size: 0.8rem;
+    color: #777777;
+    margin-top: 0.2rem;
+}
+
+.item-depoimento h3::before {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fef9e2;
+    color: #c98a00;
+    font-weight: bold;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.item-depoimento:child(1) h3::before {
+    content: "M";
+}
+.item-depoimento:child(2) h3::before {
+    content: "L";
+}
+.item-depoimento:child(3) h3::before {
+    content: "C";
+}
 /*FAQ*/
+#faq {
+    background-color: #fffdf2;
+    padding: 5rem 0;
+    width: 100%;
+}
 
 .titulo-faq {
     text-align: center;
     margin-bottom: 3rem;
+    background-color: #fffdf2;
 }
+
+.titulo-faq h2 { 
+    color: #000000;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+.titulo-faq p { 
+    color: #c98a00;
+    font-size: 1rem;
+    margin: 0;
+}
+
 .grade-faq {
     display: grid;
     grid-template-columns: 1fr;
@@ -318,15 +487,41 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
+
+.pergunta-fac::after {
+    content: "+";
+    font-size: 1.5rem;
+    color: #c98a00;
+    transition: transform 0.3s ease
+}
+
 .item-faq {
-    border-bottom: 1px solid #757575;
+    border-bottom: 1px solid #e5dec9;
+    padding: 1.5rem 0;
+    overflow: hidden;
 }
 .item-faq h3 {
     margin-bottom: 0.5rem;
 }
 .item-faq p {
     text-align: left;
+    max-height: 0;
+    opacity: 0;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.item-faq.aberto p{ 
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 1rem;
+}
+
+.item-fac.aberto.pergunta-fac::after {
+    transform: rotate(45deg);
+    color: #000000;
 }
 
 /*footer*/
