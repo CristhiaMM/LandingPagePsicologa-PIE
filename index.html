@@ -135,7 +135,7 @@
                         <h3>Vamos dar o primeiro passo?</h3>
                         <p>A primeira sessão é para se sentir a vontade e entender como posso te ajudar!</p>
                     </div>
-                    <button type="button">Faça seu agendamento -></button>
+                    <button type="button">Faça seu agendamento </button>
                 </div>
             </div>
         
@@ -236,14 +236,12 @@
             </nav>
         </div>
     </footer>
-    <script>
-  const perguntas = document.querySelectorAll('.pergunta-faq');
-
-  perguntas.forEach(pergunta => {
-    pergunta.addEventListener('click', () => {
-      pergunta.parentElement.classList.toggle('aberta');
+<script>
+    document.querySelectorAll('.item-faq').forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('aberto');
+        });
     });
-  });
 </script>
 </body>
 </html>
