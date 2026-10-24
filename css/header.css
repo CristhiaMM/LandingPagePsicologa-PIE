@@ -44,23 +44,3 @@
 .navbar-link a:hover {
     color: #a8dadc;
 }
-
-.pai-bloco-sobre{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.texto-sobre{
-    flex: 2;
-}
-
-.img-sobre{
-    flex: 1;
-    width: 300px; 
-    height: auto;
-    border-radius: 16px;
-}
