@@ -27,10 +27,12 @@ body {
   min-height: calc(100vh - 80px);
   box-sizing: border-box;
   padding: 2rem;
+  
 }
 
 .texto-esquerda-foto{
     flex: 1;
+    
 }
 
 .grade-expriencia-esquerda{
@@ -38,20 +40,20 @@ body {
     grid-template-columns: repeat(3, max-content );
     gap: 3rem;
     margin-top: 2rem;
+    
 }
 
 .img-heroi-direita{
     width: 300px; 
     height: auto; 
     border-radius: 16px;
+    
 }
-
-
 
 /* Seção de especialidades */
 .secao-especialidades {
     margin-top: 2rem;
-    padding: 2rem;
+    padding: 2rem; 
 }
 
 .container-especialidades {
@@ -72,8 +74,8 @@ body {
 
 .card-especialidade {
     padding: 1.5rem;
-   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: none;
     border-radius: 8px;
     background-color: #ffffff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -81,7 +83,7 @@ border: none;
 }
 .card-especialidade:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 .card-especialidade h3 {
@@ -92,30 +94,36 @@ border: none;
     line-height: 1.6;
 }
 
+/*Sessão funcionamento*/
+
 .titulo-funcionamento{
     display: flex;
     flex-flow: column;
      text-align: center;
 }
 
-
-.texto-funcionamento-consulta{
+.cards-func{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: #f4f7f6;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.passo-atendimento{
-    display: flex;
-    gap: 1rem;
-    list-style: none;
+.card-func-item{
+    flex: 1 1 220px;
+    max-width: 280px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 14px;
+    padding: 1.5rem;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease; 
+
 }
 
-#item{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.card-func-item:hover{
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 /*DEPOIMENTOS*/
