@@ -1,0 +1,66 @@
+@media (max-width: 768px) {
+ 
+  body {
+    overflow-x: hidden; 
+  }
+section, footer {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+    
+  .texto-entrada-esquerda h1 {
+    font-size: 2.2rem;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .navbar-link {
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 1rem;
+  }
+
+ 
+  .pai-bloco-inicial, .pai-bloco-sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .grade-expriencia-esquerda, 
+  .grade-especialidades, 
+  .grade-depoimentos {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  
+  .img-heroi-direita, .img-sobre {
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem auto 0;
+  }
+  
+  .identificacao-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-link-footer {
+    flex-direction: column; 
+    gap: 1.5rem;           
+    align-items: center;
+  }
+
+  .passo-atendimento {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .card-especialidade {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
