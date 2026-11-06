@@ -25,9 +25,14 @@
             <div class="navbar-container">
                 <div class="nav-brand">
                     <span class="nav-crp">CRP 08/37740</span>
-                    <a href="#hero" class="nav-logo">Dra. Vanessa A. Gonçalves</a>
+                    <a href="#hero" class="nav-logo">Dra. Vanessa A. Gonçalves </a>
                 </div>
-                <ul class="navbar-link">    
+                <button id="botao-hamburger" class="botao-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="navbar-link" id="navbar-link">    
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#especialidades">Especialidades</a></li>
                     <li><a href="#funcionamento">Como funciona</a></li>
@@ -149,7 +154,7 @@
         <div class="container-depoimentos">
             <div class="titulo-depoimentos">
                 </span><br>O que dizem sobre meu trabalho</h2>
-                <span><h2>Um texto breve de introdução à seção.</h2></span>
+                <span><h2>Veja por si nossos resultados</h2></span>
             </div>
             <div class="grade-depoimentos">
                 <article class="item-depoimento">
@@ -262,14 +267,22 @@
         </div>
     </footer>
 
-    <script>
+<script>
+  
   const perguntas = document.querySelectorAll('.pergunta-faq');
 
   perguntas.forEach(pergunta => {
     pergunta.addEventListener('click', () => {
       pergunta.parentElement.classList.toggle('aberta');
     });
-  });
+});
+    
+    const botaoHamburger = document.getElementById('botao-hamburger');
+    const navbarLink = document.getElementById('navbar-link');
+
+    botaoHamburger.addEventListener('click', function(){navbarLink.classList.toggle('ativo')});
+
+  
 </script>
 </body>
 </html>
