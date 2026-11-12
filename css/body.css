@@ -176,12 +176,14 @@ html body {
 
 .sessao-como-funciona{
   background-color: rgba(253, 250, 240, 1);
+ 
 }
 .titulo-funcionamento{
     display: flex;
     height: 100px;
     flex-flow: column;
     text-align: center;
+    justify-content: center;
 }
 .numero-passo{
   display: flex;
