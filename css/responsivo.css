@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
 body {
     overflow-x: hidden; 
@@ -95,5 +95,4 @@ section, footer {
     width: 100%;
     max-width: 100%;
   }
-
 }

@@ -13,10 +13,10 @@
     <meta name="description" content="Psi. Vanessa A. Gonçalves | Atendimento humanizado!">
     <meta name="keywords" content="Psicologia,psicologa,foz do iguaçu,abordagem tcc,autismo,tdah,avaliação psicologica,rastramento autismo,cid">
     <meta name="author" content="CWMM">
-    <link rel="icon" type="img/png" href="img/favicon.ico"> <!--incone da pagina-->
+    <link rel="icon" type="img/x-icon" href="img/favicon.ico"> <!--incone da pagina-->
     <title>Psi. Vanessa Andrade Gonçalves | Psicologa CRP 08/37740</title>  <!--titulo barra de guia-->
-    <meta property="og: title" content="Site Psi. Vanessa A. Gonçalves | CRP: 08/37740">
-    <meta property="og: description" content="Psicoterapia, Avaliação Neuropsicologia, Autismo">
+    <meta property="og:image" content="https://landingpagepsicologa-pie.vercel.app/img/vanessa-heroi.jpeg">
+    <meta property="og:description" content="Psicoterapia, Avaliação Neuropsicologia, Autismo">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -27,7 +27,7 @@
                     <span class="nav-crp">CRP 08/37740</span>
                     <a href="#hero" class="nav-logo">Psi. Vanessa A. Gonçalves </a>
                 </div>
-                <button id="botao-hamburger" class="botao-hamburger">
+                <button id="botao-hamburger" class="botao-hamburger">       <!--barra de navegação responsivo-->
                     <span></span>
                     <span></span>
                     <span></span>
@@ -59,7 +59,7 @@
                     <p>98%<br> de Satisfação</p>
                 </div>
             </div>
-            <img src="img/vanessa heroi.jpeg" class="img-heroi-direita" alt="Imagem Dra. Vanessa A. Gonçalves">
+            <img src="img/vanessa-heroi.jpeg" class="img-heroi-direita" alt="Imagem Dra. Vanessa A. Gonçalves">
         </div>
     </section>
     
@@ -153,8 +153,8 @@
     <section id="depoimentos">                                          <!--sessão depoimentos-->
         <div class="container-depoimentos">
             <div class="titulo-depoimentos">
-                </span><br>O que dizem sobre meu trabalho</h2>
-                <span><h2>Veja por si nossos resultados</h2></span>
+                <span>O que dizem sobre meu trabalho</span>
+                <h2>Veja por si nossos resultados</h2>
             </div>
             <div class="grade-depoimentos">
                 <article class="item-depoimento">
@@ -241,7 +241,7 @@
                 Agendar pelo WhatsApp
             </a>
             <div class="contato-direto" id="contato">
-                <a href="tel:+554598426508">Ligar para nós</a>
+                <a href="tel:+5545998426508">Ligar para nós</a>
                 <a href="mailto:nessa.andrade321@gmail.com">Enviar e-mail</a>
             </div>
         </div>
@@ -266,15 +266,12 @@
             </nav>
         </div>
     </footer>
-
 <script>
   
   const perguntas = document.querySelectorAll('.pergunta-faq');
 
   perguntas.forEach(pergunta => {
-    pergunta.addEventListener('click', () => {
-      pergunta.parentElement.classList.toggle('aberta');
-    });
+    pergunta.addEventListener('click', () => { pergunta.parentElement.classList.toggle('aberta');});
 });
     
     const botaoHamburger = document.getElementById('botao-hamburger');

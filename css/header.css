@@ -26,18 +26,19 @@
 }
 .navbar-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     max-width: 1200px; 
     margin: 0 auto;
     padding: 1rem 2rem; 
 }
 .nav-logo {
-    font-size: 1.15rem;
+    
+    font-size: 1.50rem;
     font-weight: bold;
     text-decoration: none;
     color: #f7f6f6;
-    margin-right: 3rem;
+    margin-right: 1rem;
     white-space: nowrap;
 }
 .nav-brand{
@@ -69,4 +70,3 @@
 .navbar-link a:hover {
     color: #a8dadc;
 }
-
