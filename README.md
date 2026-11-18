@@ -51,4 +51,4 @@ O projeto está hospedado na Vercel.
 
 Autores
 
-Desenvolvido por  Erick Renato Mendes dos Santos, Ciro Rafael Marques Cardoso, Cristhian wallysan de melo Melgarejo, Matheus Zanotti Ferreira e Felipe 
+Desenvolvido por  Erick Renato Mendes dos Santos, Ciro Rafael Marques Cardoso, Cristhian wallysan de melo Melgarejo, Matheus Zanotti Ferreira e Felipe Gabriel Ramão bianchin
