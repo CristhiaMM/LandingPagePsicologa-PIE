@@ -285,12 +285,16 @@ html body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
-.pergunta-faq h3 {
+.pergunta-faq button {
   color: #2c3e50;
   font-size: 1.1rem;
   font-weight: 600;
   margin: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
 }
 .pergunta-faq span {
   font-size: 1.5rem;
