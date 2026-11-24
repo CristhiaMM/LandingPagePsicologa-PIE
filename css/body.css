@@ -40,13 +40,13 @@ html body {
     width: 400px; 
     height: auto; 
     border-radius: 16px;
-    
 }
 .texto-entrada-esquerda{
   background-color: rgba(253,250,240,0.85);
   padding: 1rem;
   border-radius: 16px;
   display: inline-block;
+  margin-left: 2.5rem;  
 }
 .texto-esquerda-foto{
     flex: 1;   
