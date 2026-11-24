@@ -175,7 +175,11 @@ html body {
 
 .sessao-como-funciona{
   background-color: rgba(253, 250, 240, 1);
+<<<<<<< HEAD
   padding-bottom: 2rem;
+=======
+ 
+>>>>>>> 81fbb7803b1e782b55c61bd6c1d5ec4f6d18e21a
 }
 .titulo-funcionamento{
     display: flex;
@@ -285,12 +289,24 @@ html body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
 }
 .pergunta-faq h3 {
+=======
+    cursor: pointer;
+}
+.pergunta-faq button {
+>>>>>>> 81fbb7803b1e782b55c61bd6c1d5ec4f6d18e21a
   color: #2c3e50;
   font-size: 1.1rem;
   font-weight: 600;
   margin: 0;
+<<<<<<< HEAD
+=======
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+>>>>>>> 81fbb7803b1e782b55c61bd6c1d5ec4f6d18e21a
 }
 .pergunta-faq span {
   font-size: 1.5rem;
